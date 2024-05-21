@@ -2,7 +2,7 @@ export const AlfombrandoData = [
   {
     id: 1,
     name: "Alfombrando Distribucion y Servicios",
-    image: "alfombrandofrente.jpg",
+    image: "alfombrandofachada.jpg",
     position: {
       lat: 4.541336442118627,
       lng: -75.66388114757103,

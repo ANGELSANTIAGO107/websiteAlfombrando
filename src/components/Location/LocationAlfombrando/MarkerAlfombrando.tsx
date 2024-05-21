@@ -29,14 +29,14 @@ export function MarkerAlfombrando(props: MarkerAlfombrandoProps) {
             <FaMapMarkerAlt />
           </span>
           <h5 className="text-md text-secondary">{name}</h5>
-          <Image
-            src={`/assets/Servicios/${image}`}
-            alt={name}
-            width={100}
-            height={100}
-            className="w-full h-auto"
-          />
         </div>
+        <Image
+          src={`/assets/Servicios/${image}`}
+          alt={name}
+          width={100}
+          height={100}
+          className="w-full h-auto"
+        />
       </Popup>
     </Marker>
   ));

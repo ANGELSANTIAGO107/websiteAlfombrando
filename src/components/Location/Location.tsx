@@ -32,9 +32,9 @@ export function Location() {
       </h4>
       <MapContainer
         center={coordinatepoint}
-        zoom={18}
+        zoom={19}
         scrollWheelZoom={false}
-        className="h-[700px]"
+        className="h-[1000px]"
       >
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         <MarkerAlfombrando selectMarker={centerMarker} />
