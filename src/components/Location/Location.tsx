@@ -3,13 +3,13 @@
 import { Map } from "leaflet";
 import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-
 import { Transition } from "../Transition";
+import { MarkerAlfombrando } from "./LocationAlfombrando";
 
 export function Location() {
   const coordinatepoint = {
-    lat: 4.533333,
-    lng: -75.666667,
+    lat: 4.541336442118627,
+    lng: -75.66388114757103,
   };
   const centerMarker = (position: { lat: number; lng: number }, fnMap: Map) => {
     fnMap.flyTo({
@@ -32,11 +32,12 @@ export function Location() {
       </h4>
       <MapContainer
         center={coordinatepoint}
-        zoom={10}
+        zoom={18}
         scrollWheelZoom={false}
-        className="h-[500px]"
+        className="h-[700px]"
       >
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        <MarkerAlfombrando selectMarker={centerMarker} />
       </MapContainer>
     </Transition>
   );

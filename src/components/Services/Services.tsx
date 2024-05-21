@@ -20,7 +20,7 @@ export function Services() {
             vidrios <span className="font-bold">¡Y MAS!</span>
           </p>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center w-ful">
             <Slider />
 
         </div>

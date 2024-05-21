@@ -4,8 +4,8 @@ export const AlfombrandoData = [
     name: "Alfombrando Distribucion y Servicios",
     image: "alfombrandofrente.jpg",
     position: {
-      lat: 4.541458064555718,
-      lng: -75.66390371873503,
+      lat: 4.541336442118627,
+      lng: -75.66388114757103,
     },
   },
   {
@@ -13,8 +13,8 @@ export const AlfombrandoData = [
     name: "Mundo Computo",
     image: "mundoComputo.jpg",
     position: {
-      lat: 4.541336442118627,
-      lng: -75.66388114757103,
+      lat: 4.541458064555718,
+      lng: -75.66390371873503,
     },
   },
   {

@@ -29,7 +29,7 @@ export function Slider() {
               height={700}
               className="w-full h-full rounded-lg object-cover"
             />
-            <div className="mt-1 text-center font-ligth font-medium text-sm w-full">{name}</div>
+            <div className="mb-5 text-center w-full text-sm">{name}</div>
           </div>
         </SwiperSlide>
       ))}
