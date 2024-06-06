@@ -1,17 +1,24 @@
 "use client"
 import { CiMenuFries } from "react-icons/ci";
-import { BsTelephone } from "react-icons/bs";
+import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import { useState } from "react";
 import { Navbar } from "../Navbar";
+import Image from "next/image";
 
 export function Header() {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
   return (
     <div className="container mx-auto my-5">
-      <div className="flex items-center justify-around px-5 md:p-0">
+      <div className="flex items-center justify-around px-5 md:px-0">
         <Link href="/">
-          <h1 className="font-medium">ALFOMBRANDO</h1>
+          <Image
+            src={"/assets/LogoAlfombrandoSinFondo.png"}
+            alt="alfombrando"
+            width={200}
+            height={100}
+            className="p-0 m-0 rounded-lg"
+          />
         </Link>
 
         <CiMenuFries
@@ -26,14 +33,8 @@ export function Header() {
             href="tel:310 538 5315"
             className="flex items-center gap-4 cursor-pointer"
           >
-            <BsTelephone />
-            <span className="hidden md:block">310 538 5315</span>
-          </Link>
-          <Link
-            href="/login"
-            className="px-3 py-2 text-white rounded-lg bg-secondary hover:bg-black"
-          >
-            Login
+            <FaWhatsapp className="text-2xl" />
+            <span className="hidden md:block font-semibold ">Whatsapp</span>
           </Link>
         </div>
       </div>

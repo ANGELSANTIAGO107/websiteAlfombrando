@@ -4,8 +4,6 @@ import { NavbarProps } from "./Navbar.types";
 import { AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Transition } from "../Transition";
-import { link } from "fs";
 
 export function Navbar(props: NavbarProps) {
   const { openMobileMenu } = props;
@@ -47,12 +45,6 @@ export function Navbar(props: NavbarProps) {
                 {name}
               </Link>
             ))}
-            <Link
-              href={"/login"}
-              className="px-3 py-2 text-white rounded-lg bg-secondary hover:bg-black"
-            >
-              Login
-            </Link>
           </div>
         </motion.nav>
       ) : (

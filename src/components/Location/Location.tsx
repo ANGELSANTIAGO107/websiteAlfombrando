@@ -8,8 +8,8 @@ import { MarkerAlfombrando } from "./LocationAlfombrando";
 
 export function Location() {
   const coordinatepoint = {
-    lat: 4.541336442118627,
-    lng: -75.66388114757103,
+    lat: 4.541336442118626,
+    lng: -75.66388114757102,
   };
   const centerMarker = (position: { lat: number; lng: number }, fnMap: Map) => {
     fnMap.flyTo({
@@ -18,10 +18,10 @@ export function Location() {
     });
   };
   return (
-    <Transition className="px-4 py-8 md:py-44 md:px-36">
+    <Transition className="px-4 py-8 md:py-38 md:px-36">
       <h2 className="max-w-2xl mx-auto my-4 mb-8 text-3xl font-semibold text-center">
-        Servicios disponibles para todo el eje cafetero, que esperas para
-        renovar tu espacio favorito, con productos de alta calidad
+        Servicios disponibles para todo el eje cafetero que esperas para
+        renovar tu espacio favorito con productos de alta calidad
       </h2>
       <h4
         className="Localization text-center text-secondary mb-4"
@@ -36,7 +36,7 @@ export function Location() {
         scrollWheelZoom={false}
         className="h-[1000px]"
       >
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" className="h-60%"/>
         <MarkerAlfombrando selectMarker={centerMarker} />
       </MapContainer>
     </Transition>
