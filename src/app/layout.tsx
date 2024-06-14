@@ -5,7 +5,7 @@ import './globals.css'
 const quickSand = Quicksand({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Webstite-alfonbrando',
+  title: 'Webstite-alfombrando',
   description: 'Diseña con Nosotros el Hogar de tus sueños',
 }
 
