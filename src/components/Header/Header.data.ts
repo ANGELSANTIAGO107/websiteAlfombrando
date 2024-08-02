@@ -3,19 +3,20 @@ import { HeaderData } from "./Header.types";
 export const dataHeader: HeaderData[] = [
   {
     id: 1,
-    name: "Home",
+    name: "Inicio",
     link: "/",
   },
   {
     id: 2,
-    name: "Sobre nosotros",
-    link: "#about",
+    name: "Productos",
+    link: "#products",
   },
   {
     id: 3,
     name: "Servicios",
     link: "#services",
   },
+
   {
     id: 4,
     name: "Localización",
@@ -23,7 +24,7 @@ export const dataHeader: HeaderData[] = [
   },
   {
     id: 5,
-    name: "Productos",
-    link: "#products",
+    name: "Sobre nosotros",
+    link: "#about",
   },
 ];

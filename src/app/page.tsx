@@ -8,31 +8,33 @@ import { Products, } from '@/components/Products'
 import { Services } from '@/components/Services'
 import { TransitionPage } from '@/components/TransitionPage'
 import dynamic from "next/dynamic"
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 const LocationMap = dynamic(
-  () => import('../components/Location').then(module => module.Location),
+  () => import("../components/Location").then((module) => module.Location),
   {
-    ssr: false
+    ssr: false,
   }
-)
+);
 
 export default function Home() {
-
   return (
     <>
-      <TransitionPage />
-      <Header />
-      <main>
-        <Banner />
-        <Products />
-        <div className="max-w-6xl mx-auto">
-          <Services />
-          <LocationMap />
-          <About />
-        </div>
-        <JoinCommunity />
-        <Footer />
-      </main>
+      <BrowserRouter>
+        <TransitionPage />
+        <Header />
+        <main>
+          <Banner />
+          <Products />
+          <div className="max-w-6xl mx-auto">
+            <Services />
+            <LocationMap />
+            <About />
+          </div>
+          <JoinCommunity />
+          <Footer />
+        </main>
+      </BrowserRouter>
     </>
-  )
+  );
 }

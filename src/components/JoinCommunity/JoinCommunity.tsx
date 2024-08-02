@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function JoinCommunity() {
   return (
-    <Transition className="grid grid-cols-2 h-full w-full px-4 py-8 md:py-34 md:px-30 bg-secondary">
+    <Transition className="grid grid-cols-2 h-full w-full px-4 py-8  md:py-34 md:px-30 bg-secondary">
       {/* Columna 1: Texto */}
       <div className="flex items-center justify-center col-span-1 h-full">
         <h3 className="max-w-lg text-4xl font-semibold text-white text-center">
@@ -54,13 +54,15 @@ export function JoinCommunity() {
         </div>
         {/* Columna 3: Código QR */}
         <div className="flex flex-col items-center justify-center">
-          <span className="text-sm font-medium mb-2 ml-10 text-white">Escaneame Y Chatea Con Nosotros</span>
+          <span className="text-sm font-medium mb-2 ml-10 text-white">
+            Escaneame Y Chatea Con Nosotros
+          </span>
           <div className="text-white transition-all duration-100 bg-secondary rounded-lg p-5 w-fit">
             <Image
               src={"/assets/QRwhatsapp.png"}
               alt="QR de WhatsApp"
               width={200}
-              height={200} 
+              height={200}
               className="ml-10"
             />
           </div>

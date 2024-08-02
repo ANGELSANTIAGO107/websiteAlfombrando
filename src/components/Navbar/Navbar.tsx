@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react"
 import { dataHeader } from "../Header/Header.data"
 import { NavbarProps } from "./Navbar.types";
-import { AnimatePresence } from "framer-motion";
+import { animate, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 export function Navbar(props: NavbarProps) {
   const { openMobileMenu } = props;
-  const [isScrolLing, setIsScrolLing] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
 
   const hadleScroll = () => {
-    if (window.scrollY <= window.innerHeight - 600) {
-      setIsScrolLing(true);
+    if (window.scrollY >= window.innerHeight - 600) {
+      setIsScrolling(true);
     } else {
-      setIsScrolLing(false);
+      setIsScrolling(false);
     }
   };
 
@@ -26,14 +26,14 @@ export function Navbar(props: NavbarProps) {
 
   return (
     <AnimatePresence>
-      {isScrolLing ? (
+      {isScrolling ? (
         <motion.nav
           key={1}
           variants={animationNavbar}
           initial="initial"
           animate="animate"
           exit="exit"
-          className="ml-auto mr-auto md:fixed <[9999] right-0 left-0 px-6 py-3 text-white bg-gray-400/40 top-0 rounded-3xl backdrop-blur w-full"
+          className="ml-auto mr-auto md:fixed z-[9999] right-0 left-0 px-6 py-3 text-white bg-gray-400/40 top-10 rounded-3xl backdrop-blur w-fit"
         >
           <div className="items-center hidden gap-5 md:flex">
             {dataHeader.map(({ id, name, link }) => (
@@ -55,6 +55,7 @@ export function Navbar(props: NavbarProps) {
               : "hidden"
           } gap-5 md:flex`}
         >
+          {" "}
           {dataHeader.map(({ id, name, link }) => (
             <Link
               key={id}
@@ -78,7 +79,7 @@ const animationNavbar = {
   animate: {
     y: 0,
     opacity: 1,
-    Transition: {
+    transition: {
       stiffness: 100,
       damping: 20,
       type: "spring",

@@ -9,12 +9,11 @@ export function Banner() {
             Diseño Para Tus Espacios
           </h2>
           <h2 className="mt-2 text-xl md:mt-8 ">
-            contamos con los mejores productos y los mejores instaladores para
-            el hogar de tus sueños
+            Contamos Con Los Mejores Productos Y Los Mejores Instaladores Para
+            El Hogar De Tus Sueños
           </h2>
         </div>
-        <FloatedSearch />
-      </div>
+     </div>
     </div>
   );
 }

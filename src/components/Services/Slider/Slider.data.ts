@@ -7,17 +7,17 @@ export const sliderDataImages = [
   {
     id: 2,
     urlImage: "instalacionPisos.jpeg",
-    name: "Arte en Pisos Restauración y Mantenimiento",
+    name: "Mantenimiento y Restauracion de Pisos",
   },
   {
     id: 3,
     urlImage: "instalacionPisos.jpeg",
-    name: "Tu Hogar, Tu Estilo Instalacion de Pisos para Todos los Gustos",
+    name: "Instalacion De Pisos Spc y Spc De click y Laminados",
   },
   {
     id: 4,
     urlImage: "instalacionPisos.jpeg",
-    name: "Magia en Persianas Transformamos tus Ventanas",
+    name: "Instalacion De Persianas Estilo Para tus Ventanas",
   },
   {
     id: 5,
@@ -32,6 +32,6 @@ export const sliderDataImages = [
   {
     id: 7,
     urlImage: "instalacionPisos.jpeg",
-    name: "Instalacion y restauracion de  Toldos y Pérgolas a tu Medida",
+    name: "Instalacion y restauracion de Toldos y Pérgolas",
   },
 ];

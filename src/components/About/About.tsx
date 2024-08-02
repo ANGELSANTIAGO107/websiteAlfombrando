@@ -11,15 +11,15 @@ export function About() {
           alt="alfombrando"
           width={300}
           height={100}
-          className="p-0 m-0 rounded-lg"
+          className="p-0 m-0 rou nded-lg"
         />
         <h2 className="my-2 text-2xl font-semibold p-4">
           Vive experiencias unicas Como Tú
         </h2>
-        <p>
+        <p>       
           <span className="font-bold">
             ¿Cansado de las mismas opciones aburridas?
-          </span><br></br>
+          </span><br></br> 
           En Alfombrando, revolucionamos el mercado con productos y servicios
           innovadores que se adaptan a tus necesidades únicas. Descubre un mundo
           de posibilidades y experimenta la diferencia de ser parte de nuestra

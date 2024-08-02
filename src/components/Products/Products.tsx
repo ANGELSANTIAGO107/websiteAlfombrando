@@ -17,8 +17,8 @@ export function Products() {
   };
 
   return (
-    <Transition className="px-4 my-8 md:py-28 md:px-40">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <Transition className="px-4 my-8 md:py-32 md:px-40">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         {dataFilterProducts.map(({ id, name, image, description }) => (
           <Link
             key={id}
@@ -31,13 +31,15 @@ export function Products() {
                 alt={name}
                 width={300}
                 height={200}
-                className="object-cover w-full h-48 rounded-t-2xl "
+                className="object-cover w-full max-h-full h-[200px] rounded-t-2xl"
               />
             </div>
             <div className="flex flex-col justify-between p-4 h-full">
               <div className="flex-grow">
-                <p className="text-secondary mb-2 font-bold text-center">{name}</p>
-                <p className=" p-2 rounded-lg  text-sm overflow-hidden h-full text-center w-full flex justify-center ">
+                <p className="text-secondary mb-2 font-bold text-center">
+                  {name}
+                </p>
+                <p className="p-2 rounded-lg  text-sm overflow-hidden h-full text-center w-full flex justify-center ">
                   {description}
                 </p>
               </div>
@@ -50,7 +52,7 @@ export function Products() {
       </div>
       <div className="text-center my-7 flex justify-center gap-4">
         {counterProducts < dataProducts.length && (
-          <button 
+          <button
             className="px-6 py-2 text-white transition-all duration-150 cursor-pointer bg-secondary rounded-xl hover:bg-black"
             onClick={loadMoreProducts}
           >
@@ -61,7 +63,7 @@ export function Products() {
           <button
             className="px-6 py-2 text-white transition-all duration-150 cursor-pointer bg-secondary rounded-xl hover:bg-black"
             onClick={loadMenusProducts}
-          >                           
+          >
             Ver Menos Productos
           </button>
         )}

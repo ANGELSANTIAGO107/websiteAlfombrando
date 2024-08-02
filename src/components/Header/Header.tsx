@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Navbar } from "../Navbar";
 import Image from "next/image";
+import { Routes, Route } from "react-router-dom";
 
 export function Header() {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
